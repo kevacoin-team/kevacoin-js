@@ -1,0 +1,34 @@
+{
+  "name": "kevacoin-js",
+  "version": "0.0.1",
+  "description": "A JavaScript client for storing data on the Kevacoin blockchain",
+  "main": "dist/main.js",
+  "author": "Doug Flynn <DougFlynnDevelopment@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon --ignore dist --ext js,ts,json --exec \"yarn build:run\"",
+    "build:run": "tsc && ts-node dev-consumer/consumer.ts",
+    "build": "tsc",
+    "test": "mocha tests/*.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.16",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.41",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@open-rpc/client-js": "^1.6.3",
+    "dotenv": "^8.2.0",
+    "yargs": "^16.2.0"
+  },
+  "bin": {
+    "kevacoind": "./bin/kevacoind",
+    "kevacoin-cli": "./bin/kevacoin-cli"
+  }
+}

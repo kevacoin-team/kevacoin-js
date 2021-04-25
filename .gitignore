@@ -1,0 +1,7 @@
+# Build/lib data
+node_modules/
+dist/
+
+# Sensitive data
+kevacoin.conf
+.env
