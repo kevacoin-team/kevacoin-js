@@ -1,4 +1,4 @@
-<div style="display: flex; align-items: center">
+<div align="center">
   <img style="height: 50px; margin-right: 15px" src="assets/kevacoin.png" />
   <h1>Kevacoin.js</h1>
 </div>
