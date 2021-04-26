@@ -9,8 +9,8 @@ const { KevaClient } = require("../dist/main");
     const app = new KevaClient({
       namespace: "my-keva-namespace",
       credentials: {
-        username: "keva-user",
-        password: "J9JkYnPiXWqgRzg3vAA",
+        username: "random-user CHANGE ME",
+        password: "random-password CHANGE ME",
       },
     });
     //
