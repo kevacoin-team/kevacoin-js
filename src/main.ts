@@ -1,4 +1,5 @@
 import { RequestManager, HTTPTransport, Client } from "@open-rpc/client-js";
+import { Nullable } from "./structures/general";
 
 export interface KevaConfig {
   namespace: string;
@@ -7,8 +8,6 @@ export interface KevaConfig {
     password: string;
   };
 }
-
-type Nullable<T> = T | null;
 
 export enum RPCCommands {
   // Free/Read Actions
