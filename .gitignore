@@ -2,6 +2,7 @@
 node_modules/
 dist/
 
-# Sensitive data
+# Potentially sensitive data
 kevacoin.conf
 .env
+config.json

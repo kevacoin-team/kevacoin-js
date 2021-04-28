@@ -1,0 +1,10 @@
+{
+  "label": "keva-proc",
+  "ip": "localhost",
+  "allowedIps": ["0.0.0.0/0"],
+  "port": 5001,
+  "user": "USER_REPLACE_ME",
+  "password": "REPLACE_ME",
+  "quiet": false,
+  "threads": 1
+}

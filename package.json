@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A JavaScript client for storing data on the Kevacoin blockchain",
   "main": "dist/main.js",
+  "repository": "github:DukeFerdinand/kevacoin-js",
   "author": "Doug Flynn <DougFlynnDevelopment@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -29,6 +30,7 @@
     "yargs": "^16.2.0"
   },
   "bin": {
-    "kevacoind": "./server/server.js"
+    "keva-server": "./server/server.js",
+    "kevacoind": "./server/kevacoind"
   }
 }
