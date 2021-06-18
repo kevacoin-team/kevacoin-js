@@ -1,0 +1,8 @@
+version: "3"
+services:
+  kevacoind:
+    build:
+      context: .
+      dockerfile: Dockerfile.daemon
+    ports:
+      - 5001:5001

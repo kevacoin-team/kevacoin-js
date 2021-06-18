@@ -1,0 +1,19 @@
+FROM debian:stable-slim
+
+# Default all of these for daemon. All or some may be overwritten as desired
+ENV KEVA_RPC_BIND=0.0.0.0
+ENV KEVA_ALLOWED_IP=0.0.0.0/0
+ENV KEVA_RPC_PORT=5001
+ENV KEVA_RPC_USER=keva
+ENV KEVA_RPC_PWD=keva_pass
+ENV KEVA_PRINT_TO_CONSOLE=1
+
+# Make a directory for the keva binaries
+WORKDIR /keva
+
+# Move needed binary/binaries
+COPY ./bin/kevacoind .
+RUN chmod +x ./kevacoind
+
+# Launch the daemon node
+CMD ./kevacoind -server=1 -rpcbind=$KEVA_RPC_BIND -rpcallowip=$KEVA_ALLOWED_IP -rpcport=$KEVA_RPC_PORT -rpcuser=$KEVA_RPC_USER -rpcpassword=$KEVA_RPC_PWD -printtoconsole=$KEVA_PRINT_TO_CONSOLE
